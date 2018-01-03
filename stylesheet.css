@@ -1,0 +1,294 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+  font-family: 'gotham';
+  src: url('./assets/font/GothamBlack.otf') format('truetype');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gotham';
+  src: url('./assets/font/GothamBlack-Italic.otf') format('truetype');
+  font-weight: 800;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'gotham';
+  src: url('./assets/font/GothamBold.otf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gotham';
+  src: url('./assets/font/GothamBold-Italic.otf') format('truetype');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'gotham';
+  src: url('./assets/font/GothamMedium.otf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gotham';
+  src: url('./assets/font/GothamMedium-Italic.otf') format('truetype');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'gotham';
+  src: url('./assets/font/GothamBook.otf') format('truetype');
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gotham';
+  src: url('./assets/font/GothamBook-Italic.otf') format('truetype');
+  font-weight: 400;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'gotham';
+  src: url('./assets/font/GothamLight.otf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gotham';
+  src: url('./assets/font/GothamLight-Italic.otf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+html {
+  background-color: white;
+  color: #111;
+  font-family: "gotham";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.375;
+  -webkit-font-smoothing: antialiased;
+  font-kerning: normal;
+  text-rendering: optimizeLegibility;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body {
+
+}
+
+.header {
+  font-size: 0;
+  text-align: justify;
+  padding: 0 24px;
+	background-color: #000;
+}
+
+.header:after {
+  content: '';
+  display: inline-block;
+  width: 100%;
+}
+
+.header-branding,
+.header-menu,
+.header-menu-mobile {
+  font-size: 18px;
+  display: inline-block;
+}
+
+.header-branding {
+  padding: 24px 0;
+  font-size: 24px;
+  font-weight: 600;
+	color: #FAA633;
+}
+
+.header-menu {
+  font-size: 0;
+	display: none;
+}
+
+.header-menu-item {
+  font-size: 15px;
+  display: inline-block;
+  margin: 0 15px;
+  padding: 4px 0;
+}
+
+.header-menu-item a {
+	text-decoration: none;
+	color: #777;
+}
+
+.intro,
+.latest-project {
+  font-size: 0;
+  text-align: left;
+  padding: 0 24px;
+	background-color: #eee;
+}
+
+
+.intro-text {
+	padding: 40px 0;
+}
+
+.intro-text-question {
+	font-size: 24px;
+	font-weight: 600;
+	line-height: 28px;
+	width: 90%;
+	color: #FAA633;
+}
+
+.intro-text-answer {
+	font-size: 28px;
+	font-weight: 800;
+	color: #bbb;
+	line-height: 36px;
+	padding: 18px 0 24px;
+}
+
+.intro-text-button {
+	background-color: #FAA633;
+	text-align: center;
+	font-weight: 500;
+	font-size: 18px;
+	color: #fff;
+	padding: 12px 0;
+	width: 168px;
+}
+
+
+.service {
+	font-size: 0;
+	text-align: left;
+	background-color: #fff;
+	padding: 24px 24px;
+}
+
+.service h2 {
+	padding: 12px 0;
+	line-height: 28px;
+	font-size: 24px;
+	font-weight: 600;
+	color: #FAA633;
+}
+
+.service ul {
+	padding-left: 24px;
+	list-style: circle;
+	line-height: 24px;
+	color: #58595B;
+}
+
+.service-best-photographer,
+.service-mobile-studio,
+.service-menu-design {
+	font-size: 18px;
+	padding: 0 0 40px 0;
+}
+
+
+.service-menu-design {
+	font-size: 18px;
+	padding: 0 0 40px 0;
+}
+
+
+
+.latest-project {
+	font-size: 0;
+	text-align: left;
+	background-color: #F1F2F2;
+	padding: 24px 24px;
+}
+
+.latest-project-one,
+.latest-project-two,
+.latest-project-three {
+	font-size: 18px;
+	padding: 0 0 40px 0;
+}
+
+.latest-project h1 {
+	padding: 12px 0;
+	text-align: center;
+	line-height: 40px;
+	font-size: 28px;
+	font-weight: 600;
+	color: #FAA633;
+}
+.latest-project h3 {
+	padding: 0 0;
+	line-height: 40px;
+	font-size: 24px;
+	font-weight: 600;
+	color: #FAA633;
+}
+
+.latest-project h4 {
+
+}
