@@ -19,6 +19,19 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #58595B;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #58595B;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #58595B;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #58595B;
+}
+
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -114,7 +127,7 @@ table {
 
 html {
   background-color: white;
-  color: #111;
+  color: #58595B;
   font-family: "gotham";
   font-weight: 400;
   font-size: 18px;
@@ -132,6 +145,11 @@ html {
 img {
   max-width: 100%;
   height: auto;
+}
+
+.hr {
+	height: 1px;
+	background-color: #58595B;
 }
 
 body {
@@ -222,11 +240,12 @@ body {
 }
 
 
-.service {
+.service,
+.contact {
 	font-size: 0;
 	text-align: left;
 	background-color: #fff;
-	padding: 24px 24px;
+	padding: 0 24px;
 }
 
 .service h2 {
@@ -241,39 +260,24 @@ body {
 	padding-left: 24px;
 	list-style: circle;
 	line-height: 24px;
-	color: #58595B;
 }
 
 .service-best-photographer,
 .service-mobile-studio,
 .service-menu-design {
 	font-size: 18px;
-	padding: 0 0 40px 0;
+	padding: 24px 0 24px 0;
 }
-
-
-.service-menu-design {
-	font-size: 18px;
-	padding: 0 0 40px 0;
-}
-
-
 
 .latest-project {
 	font-size: 0;
 	text-align: left;
 	background-color: #F1F2F2;
-	padding: 24px 24px;
+	padding: 12px 24px;
+	line-height: 24px;
 }
 
-.latest-project-one,
-.latest-project-two,
-.latest-project-three {
-	font-size: 18px;
-	padding: 0 0 40px 0;
-}
-
-.latest-project h1 {
+h1 {
 	padding: 12px 0;
 	text-align: center;
 	line-height: 40px;
@@ -281,14 +285,142 @@ body {
 	font-weight: 600;
 	color: #FAA633;
 }
-.latest-project h3 {
+
+
+ h3 {
 	padding: 0 0;
 	line-height: 40px;
 	font-size: 24px;
 	font-weight: 600;
-	color: #FAA633;
 }
 
-.latest-project h4 {
+h4 {
+	font-size: 24px;
+	font-weight: 700;
+	padding-bottom: 12px;
+}
 
+h5 {
+	font-size: 24px;
+	font-weight: 700;
+}
+
+
+.latest-project-item {
+	font-size: 18px;
+	padding: 0 0 12px 0;
+	background-color: #FECF95;
+	margin: 24px 0;
+}
+
+.latest-project-testimonial {
+	padding: 0 18px;
+}
+
+.latest-project-testimonial-caption,
+.latest-project-testimonial-quoter {
+	padding: 12px 0;
+}
+
+.latest-project-testimonial-quoter-image,
+.latest-project-testimonial-quoter-name,
+.latest-project-testimonial-quoter-position,
+.latest-project-testimonial-quote {
+	text-align: center;
+	line-height: 24px;
+}
+
+.latest-project-testimonial-quote blockquote {
+	font-size: 24px;
+	line-height: 28px;
+	padding: 18px 0;
+}
+
+.latest-project-testimonial-quoter-image img {
+	width: 135px;
+	height: 135px;
+	border-radius: 50%;
+	border: 10;
+	border-color: black;
+}
+
+
+
+.contact h1 {
+	padding: 12px 0;
+	text-align: left;
+}
+
+.contact-form input,
+.contact-form textarea {
+	width: 100%;
+	padding:12px 8px;
+	margin: 8px 0;
+	border: none;
+	font-family: "gotham";
+	font-size: 18px;
+	background-color: #F1F2F2;
+	color: #58595B;
+}
+
+.contact-form textarea {
+	height: 124px;
+}
+.contact-form-submit {
+	background-color: #FAA633;
+	text-align: center;
+	font-weight: 500;
+	font-size: 18px;
+	color: #fff;
+	padding: 12px 0;
+	width: 168px;
+	margin: 8px 0;
+}
+
+
+.contact-studio {
+	padding: 28px 0;
+
+}
+.contact-studio-item {
+	font-size: 0;
+  text-align: left;
+}
+
+
+
+.contact-studio-data,
+.contact-studio-icon {
+	font-size: 18px;
+	display: inline-block;
+  text-align: left;
+  padding: 0;
+	margin: 5px 0;
+	vertical-align: center;
+}
+
+.contact-studio-icon {
+	width: 10%;
+}
+.contact-studio-data {
+	width: 90%;
+}
+
+
+.contact-social {
+text-align: center;
+padding: 28px 0 0 0;
+}
+
+.contact-social-item {
+	display: inline-block;
+	padding: 0 12px;
+}
+
+.footer {
+	font-size: 15px;
+	text-align: center;
+	background-color: #F1F2F2;
+	padding: 12px;
+	height: 40px;
 }
